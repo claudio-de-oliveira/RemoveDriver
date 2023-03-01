@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+    driverserver:
+        image: remotedriver
+        build: 
+            context: .
+            dockerfile: DriverApi\Dockerfile
+        ports: 
+            - "5253:80" 
+        environment:
+            Root: "/root/arquivos"
+            ASPNETCORE_URLS: http://+:80
+            ASPNETCORE_ENVIRONMENT: Development
+        volumes:
+            - ${USERPROFILE}\Driver:/root/arquivos             # folder em localhost: (c:\users\<...>\Driver)
+            - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https:ro
+            - ${USERPROFILE}\.aspnet\DataProtection-Keys\:/root/.aspnet/DataProtection-Keys
+            - ${APPDATA}\Microsoft\UserSecrets:/var/opt/mssql/secrets
