@@ -1,5 +1,7 @@
 # Driver Remoto
 
+<b>ESTE PROJETO É PARA EXPERIMENTAÇÃO APENAS E NÃO DEVE SER UTILIZADO EM APLICAÇÕES REAIS. ENTRETANTO, SERIA MUITO BOM SE VOCÊ PUDESSE CONTRIBUIR COM O PROJETO PARA QUE ALGUM DIA, QUEM SABE COM A SUA AJUDA, ELE VENHA A SER ÚTIL À COMUNIDADE DE DESENVOLVEDORES.</b>
+
 Api simulando um driver remoto com operações básicas para a manutenção de pastas e arquivos. Os aplicativos clientes podem, por exemplo, criar e remover pastas, fazer o upload ou download de arquivos etc.
 
 Para instalar o driver no Docker, no PowerShell vá para a pasta onde se encontra o arquivo ``docker-compose.yml`` (abaixo) e execute ``docker-compose up -d``.
